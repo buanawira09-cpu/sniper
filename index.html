@@ -709,7 +709,14 @@ footer{
 @media(max-width:900px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
 
 @media(max-width:900px){[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr!important}}
-</style>
+
+/* Filosofi + Jingle grid mobile */
+@media(max-width:900px){
+  .sec-border [style*="grid-template-columns:1fr 1fr"]{
+    grid-template-columns:1fr!important;
+    gap:24px!important;
+  }
+}</style>
 </head>
 <body>
 
@@ -889,12 +896,32 @@ footer{
 
     <!-- FILOSOFI -->
     <div class="sec sec-border">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center">
+        <div>
       <div class="s-eye">Filosofi Club</div>
       <div class="s-title">SENI<br><span class="r">PERMAINAN</span></div>
       <p class="s-desc">SNIPER adalah akronim dari <strong>Seni Permainan</strong> — filosofi bahwa petanque bukan sekadar olahraga, melainkan karya seni yang menuntut penguasaan holistik atas fisik, strategi, mental, dan spiritual.</p>
       <div style="display:flex;flex-wrap:wrap;gap:12px">
         <button class="btn-r" onclick="showPage('about')">Pelajari Lebih Lanjut →</button>
         <button class="btn-p" onclick="showPage('join')">Bergabung Sekarang</button>
+      </div>
+    
+        </div>
+        <div>
+          <div style="font-family:var(--fc);font-size:9px;letter-spacing:2.5px;color:var(--purple-dk);text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:8px">
+            <span style="display:inline-block;width:18px;height:2px;background:var(--purple)"></span>
+            Jingle SNIPER Petanque Club
+          </div>
+          <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:4px;box-shadow:0 4px 20px rgba(0,0,0,.10);background:#000">
+            <iframe
+              src="https://www.youtube.com/embed/3bxuEoHW2yk?rel=0&modestbranding=1"
+              title="Jingle SNIPER Petanque Club"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:none"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
       </div>
     </div>
 
